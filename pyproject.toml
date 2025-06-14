@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ha-ipod-entity"
+version = "1.0.0"
+description = "Home Assistant iPod Dock integration"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "httpx>=0.25.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-asyncio",
+]
+
+[tool.setuptools]
+package-dir = {"" = "custom_components"}
+packages = ["ipod_dock"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+"ipod_dock" = ["*"]
