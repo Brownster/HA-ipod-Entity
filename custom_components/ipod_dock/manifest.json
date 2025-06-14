@@ -1,0 +1,11 @@
+{
+  "domain": "ipod_dock",
+  "name": "iPod Dock",
+  "codeowners": ["@YourGitHubUsername"],
+  "documentation": "https://example.com/docs",
+  "iot_class": "local_polling",
+  "version": "1.0.0",
+  "config_flow": true,
+  "dependencies": [],
+  "requirements": ["httpx>=0.25.0"]
+}
